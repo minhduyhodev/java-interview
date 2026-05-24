@@ -1,55 +1,20 @@
 public enum LogLevel {
-    TRACE("TRC"),
-    DEBUG("DBG"),
-    INFO("INF"),
-    WARNING("WRN"),
-    ERROR("ERR"),
-    FATAL("FTL");
+    TRACE(1),
+    DEBUG(2),
+    INFO(4),
+    WARNING(5),
+    ERROR(6),
+    FATAL(42),
+    UNKNOWN(0);
 
-    private final String abbreviation;
+    private final Integer typeLog;
 
-    LogLevel(String abbreviation) {
-        this.abbreviation = abbreviation;
+    LogLevel(Integer typeLog) {
+        this.typeLog = typeLog;
     }
 
-    public String getAbbreviation() {
-        return abbreviation;
+    public Integer getTypeLog() {
+        return this.typeLog;
     }
+
 }
-
-/*
- * public class LogLine {
- * private String line = "";
- * 
- * public LogLine(String line) {
- * this.line = line;
- * }
- * 
- * public LogLevel getLogLevel() {
- * if (line == null || line.isEmpty()) {
- * throw new IllegalArgumentException("Invalid log line");
- * }
- * 
- * int open = line.indexOf("[");
- * int close = line.indexOf("]", open);
- * 
- * if (open == -1 || close <= open) {
- * throw new IllegalArgumentException("Invalid log line format");
- * }
- * 
- * String abbreviation = line.substring(open + 1, close).toUpperCase();
- * 
- * return switch(abbreviation) {
- * case "TRC" -> LogLevel.TRACE;
- * case "DBG" -> LogLevel.DEBUG;
- * case "INF" -> LogLevel.INFO;
- * case "WRN" -> LogLevel.WARNING;
- * case "ERR" -> LogLevel.ERROR;
- * case "FTL" -> LogLevel.FATAL;
- * default -> throw new IllegalArgumentException("Unknown log level: " +
- * abbreviation);
- * };
- * }
- * }
- * 
- */
