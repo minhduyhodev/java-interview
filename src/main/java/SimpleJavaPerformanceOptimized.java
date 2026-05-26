@@ -7,6 +7,7 @@ public class SimpleJavaPerformanceOptimized {
             if (ITERATIONS != 1) {
                 System.out.println("-- iteration " + (iter + 1) + " --");
             }
+
             long total = 0, start = System.currentTimeMillis(), last = start;
             for (int i = 1; i < 10_000_000; i++) {
                 total += sentence
