@@ -24,6 +24,7 @@ class DnDCharacter {
     }
 
     int ability(List<Integer> scores) {
+
         List<Integer> copy = new ArrayList<>(scores);
         int sum = 0;
         int lowest = 7;
