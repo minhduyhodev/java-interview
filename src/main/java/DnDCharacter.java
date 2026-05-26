@@ -11,7 +11,6 @@ class DnDCharacter {
     private int wisdom;
     private int charisma;
     private int constitution;
-
     private int hitPoints;
 
     public DnDCharacter() {
