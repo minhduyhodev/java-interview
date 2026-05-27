@@ -16,5 +16,4 @@ public enum LogLevel {
     public Integer getTypeLog() {
         return this.typeLog;
     }
-
 }
