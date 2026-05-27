@@ -18,7 +18,6 @@ public class TimfromMarketing {
 
     public static void main(String[] args) {
         TimfromMarketing timfromMarketing = new TimfromMarketing();
-
         System.out.println(timfromMarketing.print(null, "Charlotte Hale", null));
     }
 }
