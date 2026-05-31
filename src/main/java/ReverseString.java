@@ -11,7 +11,6 @@ class ReverseString {
             right--;
 
         }
-        return new String(arr);
     }
 
 }
