@@ -13,7 +13,5 @@ class Acronym {
         this.acronym = result.toString();
     }
 
-    String get() {
-        return acronym;
-    }
-}
+    return acronym;
+}}
