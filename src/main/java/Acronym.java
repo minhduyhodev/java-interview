@@ -10,7 +10,6 @@ class Acronym {
                 result.append(Character.toUpperCase(word.charAt(0)));
             }
         }
-
         this.acronym = result.toString();
     }
 
