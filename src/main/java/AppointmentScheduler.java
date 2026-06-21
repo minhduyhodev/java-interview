@@ -27,7 +27,6 @@ class AppointmentScheduler {
         return "You have an appointment on " + result;
     }
 
-    // hi
     public LocalDate getAnniversaryDate() {
         int year = LocalDate.now().getYear();
         return LocalDate.of(year, 9, 15);
