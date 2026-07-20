@@ -1,3 +1,3 @@
 ﻿# Dự án thử nghiệm YOLO
-toi muon co yolo
+sao ko cos
 
