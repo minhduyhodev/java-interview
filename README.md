@@ -1,3 +1,3 @@
 ﻿# Dự án thử nghiệm YOLO
-sao ko co
+sao ko c
 
